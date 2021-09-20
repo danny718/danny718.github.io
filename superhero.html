@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+			
+<title>Who is your favorite Sper Hero?</title>
+
+<script>
+
+function myfirstfunction(param) {
+ 
+ value = param 
+ console.log(value);
+ text = '';
+
+ switch(value) {
+ 	case 0:
+     text = 'You like this character for his amazing super powers';
+     break;
+    
+     case 1:
+     text = 'You like this character for his crime fighting abilities'
+     break;
+ } 
+ 	document.getElementById("superhero").innerHTML= text;
+
+}
+</script>
+
+<style> body {background-color:#2B4C63} </style>
+
+</head>
+
+<body>
+	<h1>Who is your favorite Super Hero?</h1>	
+
+	<p>Based on your selection, it will determine why you like that certain Super Hero</p>
+
+<button class="button" onclick="myfirstfunction(0)">Super Man</button>
+<br>
+<button class="button" onclick="myfirstfunction(1)">Batman</button>
+<br>
+
+
+<p id="superhero"></p>
+
+</body>
