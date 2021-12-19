@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+	<head>
+
+			<meta charset="utf-8">
+			<title>classwork</title>
+
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script> 
+			
+	$(document).ready(function(){
+
+
+	
+
+			myJson = [
+			{"name": "jimi hendrix", "instrument": "guitar", "hair": "afro", "era": "1960s"},
+			{"name": "bob james", "instrument": "keyboard", "hair": "short", "era": "1970s"}
+				]
+
+
+
+$.getJSON("https://dog.ceo/api/breeds/image/random", function(data) {
+		console.log(data);
+		alert(data.message);
+		img = '<img src="' + data.message + '">';
+		$(".dogImg").html();
+	});
+});
+</script>
+
+	</head>
+	
+	<body>
+		<h1>template</h1>
+
+		<div class="dogImg"></div>
+
+	</body>		
+
+
+
+</html>
