@@ -1,0 +1,177 @@
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+*{
+  font-family: Rimouski;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+}
+
+header span{
+    
+    color: #ff1e42; 
+}
+
+.header-text-center{
+    
+    position: fixed;
+    height: 200px;
+    
+    text-align: bottom;
+}
+
+.container{
+    padding: 20px 70px;
+    color:white;
+}
+
+.current-info{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    color:white;
+}
+.date-container{
+    font-weight: 100;
+}
+.date-container .time{
+    font-size: 70px;
+    text-align: center;
+    color:white;
+}
+
+.date-container #am-pm{
+    font-size: .6em;
+    margin-left: 10px;
+    color:white;
+}
+
+.date-container .date{
+    font-size: 2em;
+    padding: 15px;
+    text-align: center;
+    color:white;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.6em;
+    color: #ff1e42;
+}
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: 'white;';
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: 'white;';
+    font-size: 0.5em;
+}
+
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: 'white;';
+    text-align: center;
+    font-size: 2em;
+}
+
+.others-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+
+}
+
+.others-container .weather-item{
+    display: flex;
+    text-align: center;
+    color:white;
+}
+
+.location{
+    
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: 'white;';
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
